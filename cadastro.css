@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,100;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+nav a:hover{
+    color: yellow;
+
+}
+
+nav a{
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 1.3rem;
+
+}
+nav ul  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(17, 109, 195);
+    color: blanchedalmond;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    
+
+}
+
+main{
+    background: rgb(16, 125, 184);
+    min-height: 10vh;
+    min-width: 25vw;   
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+    border: 100;
+    padding: 0;
+   margin-left: 430px;
+   margin-top: 100px;
+    
+}
+
+main.container{
+background: rgb(17, 109, 195);
+max-width: 700px;
+min-height: 100vh;
+padding: 2rem;
+box-shadow: 5px 5px 15px rgba(0,0,0,2);
+border-radius: 8px;
+}
+
+main h1 {
+    font-weight: 600;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    margin-left: 1rem;
+    
+}
+
+main h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background-color: white; 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+
+.input-field{
+    position: relative;
+    
+    
+}
+
+form .input-field{
+    margin-bottom: 2rem;
+    
+   
+}
+
+.input-field .underline::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 98%;
+    bottom: -5px;
+    left: 0;
+    background: rgb(172, 159, 159);
+}
+
+.input-field .underline::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 98%;
+    bottom: -5px;
+    left: 0;
+    background: rgb(10, 19, 142);
+    transform: scaleX(0);
+    transition: all .4s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+
+.input-field input{
+    outline:none;
+    font-size:3.181rem;
+    color: black;
+    
+}
+
+form input[type="button"]{
+margin-top: 2rem;
+padding: 0.8rem;
+margin-left: -3rem;
+background: limegreen;
+cursor: pointer;
+color: white;
+font-size: 2rem;
+font-weight: 3px;
+border-radius: 50px;
+transition: all 0.3s ease;
+width: 103%;
+
+
+
+}   
+
+form input[type="button"]:hover{
+    letter-spacing: 4px;
+    background: red;
+}
+
+.fOoter{
+   
+   
+    margin-top: 10rem;
+
+}
+
+
+
+
+span{
+    color: black;    
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    
+}
+
+.social-field{
+    padding: 0.4rem;    
+    border-radius: 4px;
+    font-size: 2rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+ a i{
+    margin: 0.4rem;
+    width: 15px;
+    margin-left: 4rem;
+    color: white;
+    font-size: 3rem;
+
+
+}
+
+ a{
+    text-decoration: none;
+    color: white;  
+    font-size: 2rem; 
+    margin-left: 4rem;  
+  
+}
+
+
+.footer .social-field.twitter{
+  background: white;
+
+}
+
+.footer .social-field.facebook{
+    background: white;
+    
+  } 
